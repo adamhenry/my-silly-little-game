@@ -1,0 +1,10 @@
+
+<div class="ship-overview">
+
+	<%= error_messages_for 'overview' %>
+
+	<fieldset>
+		<legend>The Bridge of <%=h @ship.name%></legend>
+			<%= link_to "Mine Astroid", :action => 'mine_astroid' %>
+	</fieldset>
+</div>
