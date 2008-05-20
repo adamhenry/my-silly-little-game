@@ -10,6 +10,10 @@ class Ship < ActiveRecord::Base
 		max_cargo - cargo
 	end
 
+	def empty_cargo
+		self.cargo = 0
+	end
+
 	protected
 	def validate
 		raise( "Cargo hold full for -#{name}") if cargo > max_cargo

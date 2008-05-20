@@ -137,7 +137,7 @@ h1 {
 
 /* Styles for the cargo in the sidebar */
 
-#cargo {
+.cargo {
 	font-size: smaller;
 	color: white;
 }

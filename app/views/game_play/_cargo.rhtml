@@ -10,5 +10,8 @@
 		Free cargo room: <%= @ship.cargo_room %> <br/>
 		Maximum cargo: <%= @ship.max_cargo %>
 	</p>
+		<% form_remote_tag :url => { :action => :empty_cargo } do %>
+			<%= submit_tag "Empty Cargo" %>
+		<% end %>
 </div>
 
