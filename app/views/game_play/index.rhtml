@@ -7,4 +7,10 @@
 		<legend>The Bridge of <%=h @ship.name%></legend>
 			<%= link_to "Mine Astroid", :action => 'mine_astroid' %>
 	</fieldset>
+	<fieldset>
+		<legend>Cargo Manifest</legend>
+		<% @ship.hold.cargo.each do |i| %>
+			<%=h "#{i.quantity} units of #{i.name}" %> <br/>
+		<% end %>
+	</fieldset>
 </div>

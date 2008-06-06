@@ -1,4 +1,6 @@
 class Ship < ActiveRecord::Base
+	belongs_to :hold
+
 	validates_presence_of :name
 	validates_numericality_of :cargo, :max_cargo
 
